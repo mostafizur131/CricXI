@@ -1,11 +1,14 @@
 import React from "react";
+import NavBar from "./components/NavBar";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        CricXI - Cricket Score App
-      </h1>
+      <NavBar />
+      <Banner />
+      <Footer />
     </div>
   );
 };
