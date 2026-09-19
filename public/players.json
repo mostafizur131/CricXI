@@ -1,0 +1,362 @@
+[
+  {
+    "id": 1,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "role": "Batter",
+    "rating": 9.5,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1500,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Babar%20Azam.png"
+  },
+  {
+    "id": 2,
+    "name": "Shaheen Shah Afridi",
+    "country": "Pakistan",
+    "role": "Bowler",
+    "rating": 9.4,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1450,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shaheen%20Shah%20Afridi.png"
+  },
+  {
+    "id": 3,
+    "name": "Shadab Khan",
+    "country": "Pakistan",
+    "role": "All-Rounder",
+    "rating": 9.0,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1250,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shadab%20Khan.png"
+  },
+  {
+    "id": 4,
+    "name": "Fakhar Zaman",
+    "country": "Pakistan",
+    "role": "Batter",
+    "rating": 8.8,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1100,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Fakhar%20Zaman%2C%20Pakistan%20vs%20Sri%20Lanka%2C%201st%20ODI%2C%202017.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Saim Ayub",
+    "country": "Pakistan",
+    "role": "All-Rounder",
+    "rating": 8.7,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1050,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saim%20Ayub.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mitchell Marsh",
+    "country": "Australia",
+    "role": "All-Rounder",
+    "rating": 9.3,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1400,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mitchell%20Marsh.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Travis Head",
+    "country": "Australia",
+    "role": "Batter",
+    "rating": 9.6,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1550,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Travis%20Head%20bowling%20at%20Perth%20Stadium%2C%20First%20Test%20Australia%20versus%20West%20Indies%2C%202%20December%202022%2001.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "role": "All-Rounder",
+    "rating": 9.2,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1350,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Glen%20Maxwell%202026.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Josh Inglis",
+    "country": "Australia",
+    "role": "Wicket-Keeper",
+    "rating": 8.8,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1100,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Josh%20Inglis.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Adam Zampa",
+    "country": "Australia",
+    "role": "Bowler",
+    "rating": 8.9,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1150,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Zampa%202023.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Pat Cummins",
+    "country": "Australia",
+    "role": "Bowler",
+    "rating": 9.4,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1450,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pat%20Cummins.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "role": "Batter",
+    "rating": 9.0,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1250,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Steve%20Smith%20Cricketer.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Jos Buttler",
+    "country": "England",
+    "role": "Wicket-Keeper",
+    "rating": 9.5,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1500,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jos%20Buttler%20in%202023.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Jofra Archer",
+    "country": "England",
+    "role": "Bowler",
+    "rating": 9.3,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1400,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jofra%20Archer%20%283%29.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Harry Brook",
+    "country": "England",
+    "role": "Batter",
+    "rating": 9.2,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1350,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Harry%20Brook%20County%20cricket%20cropped.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Phil Salt",
+    "country": "England",
+    "role": "Wicket-Keeper",
+    "rating": 9.1,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1300,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Phil%20Salt.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Sam Curran",
+    "country": "England",
+    "role": "All-Rounder",
+    "rating": 8.9,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1200,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sam%20Curran.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Mark Wood",
+    "country": "England",
+    "role": "Bowler",
+    "rating": 8.8,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1100,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mark%20Wood%20cricketer.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Aiden Markram",
+    "country": "South Africa",
+    "role": "All-Rounder",
+    "rating": 9.2,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1350,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aiden%20Markram%20playing%20for%20South%20Africa.png"
+  },
+  {
+    "id": 20,
+    "name": "David Miller",
+    "country": "South Africa",
+    "role": "Batter",
+    "rating": 9.0,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1250,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DAVID%20MILLER%20%2815704846295%29.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Kagiso Rabada",
+    "country": "South Africa",
+    "role": "Bowler",
+    "rating": 9.4,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1450,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rabada.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Marco Jansen",
+    "country": "South Africa",
+    "role": "All-Rounder",
+    "rating": 9.1,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1300,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Marco%20Jansen%202022.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Quinton de Kock",
+    "country": "South Africa",
+    "role": "Wicket-Keeper",
+    "rating": 9.3,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1400,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/QUINTON%20DE%20KOCK%20%2815085160584%29.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "role": "Batter",
+    "rating": 9.2,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1350,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kane%20Williamson%20in%20Cricket%20World%20Cup%202019.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Glenn Phillips",
+    "country": "New Zealand",
+    "role": "All-Rounder",
+    "rating": 9.0,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1200,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Glenn%20Phillips%20NZ%20Cricketer.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Mitchell Santner",
+    "country": "New Zealand",
+    "role": "All-Rounder",
+    "rating": 8.9,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1150,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mitchell%20Santner.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Lockie Ferguson",
+    "country": "New Zealand",
+    "role": "Bowler",
+    "rating": 8.8,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1100,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lockie%20Ferguson.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Shai Hope",
+    "country": "West Indies",
+    "role": "Wicket-Keeper",
+    "rating": 8.9,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1150,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shai%20Hope.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Jason Holder",
+    "country": "West Indies",
+    "role": "All-Rounder",
+    "rating": 9.0,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1200,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jason%20Holder.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Andre Russell",
+    "country": "West Indies",
+    "role": "All-Rounder",
+    "rating": 9.1,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1300,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Andre%20Russell.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "rating": 9.6,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1550,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Rashid%20Khan.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Mohammad Nabi",
+    "country": "Afghanistan",
+    "role": "All-Rounder",
+    "rating": 8.8,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1100,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohammad%20Nabi%20with%20an%20Afghan-Australian%20fan%20in%202014.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Wanindu Hasaranga",
+    "country": "Sri Lanka",
+    "role": "All-Rounder",
+    "rating": 9.2,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1300,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Waniya.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Kusal Mendis",
+    "country": "Sri Lanka",
+    "role": "Wicket-Keeper",
+    "rating": 8.9,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1150,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Matthew%20Wade%20attempts%20to%20run%20out%20Kusal%20Mendis.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Ben Stokes",
+    "country": "England",
+    "role": "All-Rounder",
+    "rating": 9.3,
+    "battingStyle": "Left-Hand-Bat",
+    "price": 1400,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben%20Stokes.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Imran Tahir",
+    "country": "South Africa",
+    "role": "Bowler",
+    "rating": 8.6,
+    "battingStyle": "Right-Hand-Bat",
+    "price": 1000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Imran%20Tahir.jpg"
+  }
+]
