@@ -1,6 +1,7 @@
-import React, { use, useState } from "react";
+import { use, useState } from "react";
 import type { IPlayer } from "../../types";
 import AvailablePlayers from "./AvailablePlayers";
+import SelectedPlayers from "./SelectedPlayers";
 
 interface PlayersProps {
   playersPromise: Promise<IPlayer[]>;
@@ -10,7 +11,7 @@ const Players = ({ playersPromise }: PlayersProps) => {
   const players = use(playersPromise);
   const [buttonType, setButtonType] = useState("available");
 
-  const handleButtonType = (type: string) => {
+  const handleButtonType = (type: "available" | "selected") => {
     setButtonType(type);
   };
 
@@ -19,24 +20,30 @@ const Players = ({ playersPromise }: PlayersProps) => {
       <div className="container mx-auto py-8">
         <div className="flex item-center justify-between mb-3">
           <h3 className="text-2xl font-bold text-gray-900">
-            Available Players
+            {buttonType === "available"
+              ? "Available Players"
+              : "Selected Players"}
           </h3>
-          <div>
+          <div className="flex w-fit overflow-hidden rounded-full border border-gray-200 bg-white text-xs font-medium">
             <button
               onClick={() => handleButtonType("available")}
-              className={`rounded-lg border border-gray-200 border-r-none ${buttonType === "available" ? "bg-[#DFFF00]" : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
+              className={`rounded-md border-r-none ${buttonType === "available" ? "bg-[#DFFF00]" : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
             >
               Available
             </button>
             <button
               onClick={() => handleButtonType("selected")}
-              className={`rounded-lg border border-gray-200 border-l-none ${buttonType === "selected" ? "bg-[#DFFF00] " : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
+              className={`rounded-md border-l-none ${buttonType === "selected" ? "bg-[#DFFF00] " : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
             >
               Selected
             </button>
           </div>
         </div>
-        <AvailablePlayers players={players} />
+        {buttonType === "available" ? (
+          <AvailablePlayers players={players} />
+        ) : (
+          <SelectedPlayers />
+        )}
       </div>
     </div>
   );
