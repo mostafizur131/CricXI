@@ -10,9 +10,7 @@ The project focuses on practicing React state management, component-based archit
 
 ## 📸 Preview
 
-```md
-./src/assets/preview.png
-```
+![Cricket Player Selection Preview](./src/assets/preview.png)
 
 ## ✨ Features
 
