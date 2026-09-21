@@ -282,9 +282,9 @@ Examples:
 
 Frontend Developer | React | TypeScript | Tailwind CSS
 
-- GitHub: [Your GitHub Profile](https://github.com/mostafizur131)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/mostafizur131/)
-- Site: [Your Website Profile](https://mostafizurrahman.netlify.app/)
+- GitHub: [GitHub Profile](https://github.com/mostafizur131)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/mostafizur131/)
+- Site: [Website Profile](https://mostafizurrahman.netlify.app/)
 
 ## 📄 License
 
