@@ -31,7 +31,7 @@ export default function SelectedPlayersCard({
       {selectedPlayers.map((player) => (
         <div
           key={player.id}
-          className="flex min-h-[62px] items-center justify-between rounded-xl border border-gray-200 bg-white px-3 py-2.5 transition-shadow hover:shadow-sm sm:px-4"
+          className="flex min-h-15.5 items-center justify-between rounded-xl border border-gray-200 bg-white px-3 py-2.5 transition-shadow hover:shadow-sm sm:px-4"
         >
           {/* Player Info */}
           <div className="flex min-w-0 items-center gap-3">

@@ -44,7 +44,7 @@ const Footer = () => {
 
               <button
                 type="submit"
-                className="h-11 rounded-lg bg-gradient-to-r from-[#F6A8D0] to-[#F6C84B] px-7 text-xs font-bold text-[#111111] transition hover:opacity-90"
+                className="h-11 rounded-lg bg-linear-to-r from-[#F6A8D0] to-[#F6C84B] px-7 text-xs font-bold text-[#111111] transition hover:opacity-90"
               >
                 Subscribe
               </button>
@@ -116,7 +116,7 @@ const Footer = () => {
 
               <button
                 type="submit"
-                className="h-10 rounded-r-lg bg-gradient-to-r from-[#F6A8D0] to-[#F6C84B] px-5 text-xs font-bold text-[#111111] transition hover:opacity-90"
+                className="h-10 rounded-r-lg bg-linear-to-r from-[#F6A8D0] to-[#F6C84B] px-5 text-xs font-bold text-[#111111] transition hover:opacity-90"
               >
                 Subscribe
               </button>

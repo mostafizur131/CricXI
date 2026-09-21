@@ -8,6 +8,7 @@ interface SelectedPlayersProps {
   setSelectedPlayers: Dispatch<SetStateAction<IPlayer[]>>;
   coin: number;
   setCoin: Dispatch<SetStateAction<number>>;
+  handleAddMorePlayer: () => void;
 }
 
 const SelectedPlayers = ({
@@ -15,6 +16,7 @@ const SelectedPlayers = ({
   setSelectedPlayers,
   coin,
   setCoin,
+  handleAddMorePlayer,
 }: SelectedPlayersProps) => {
   return (
     <div>
@@ -43,8 +45,8 @@ const SelectedPlayers = ({
       <div className="mt-6">
         <button
           type="button"
-          // onClick={onAddMore}
-          className="rounded-lg border border-gray-500 bg-white p-[3px] transition-all hover:border-slate-900"
+          onClick={handleAddMorePlayer}
+          className="rounded-lg border border-gray-500 bg-white p-0.75 transition-all hover:border-slate-900"
         >
           <span className="block rounded-md border border-gray-700 bg-lime-400 px-3 py-1.5 text-xs font-bold text-slate-700 transition-colors hover:bg-lime-300 sm:px-4 sm:py-2">
             Add More Player

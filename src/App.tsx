@@ -5,13 +5,26 @@ import Footer from "./components/Footer";
 import Players from "./components/players/Players";
 import type { IPlayer } from "./types";
 
-const playersPromise = async (): Promise<IPlayer[]> => {
+// const playerFetchPromise = async (): Promise<IPlayer[]> => {
+//   const response = await fetch("/players.json");
+//   const data = await response.json();
+//   return data;
+// };
+
+const playerFetchPromise = async (): Promise<IPlayer[]> => {
   const response = await fetch("/players.json");
-  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch players");
+  }
+
+  const data: IPlayer[] = await response.json();
+
   return data;
 };
 
 const App = () => {
+  const [playersPromise] = useState(() => playerFetchPromise());
   const [coin, setCoin] = useState(10000);
 
   return (
@@ -20,7 +33,7 @@ const App = () => {
       <Banner />
       <Suspense fallback={<div>Loading players...</div>}>
         <Players
-          playersPromise={playersPromise()}
+          playersPromise={playersPromise}
           coin={coin}
           setCoin={setCoin}
         />

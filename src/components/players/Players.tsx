@@ -21,6 +21,16 @@ const Players = ({ playersPromise, coin, setCoin }: PlayersProps) => {
     setButtonType(type);
   };
 
+  // Add More Player
+  const handleAddMorePlayer = () => {
+    setButtonType("available");
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="bg-white ">
       <div className="container mx-auto py-8">
@@ -33,15 +43,16 @@ const Players = ({ playersPromise, coin, setCoin }: PlayersProps) => {
           <div className="flex w-fit overflow-hidden rounded-full border border-gray-200 bg-white text-xs font-medium">
             <button
               onClick={() => handleButtonType("available")}
-              className={`rounded-md border-r-none ${buttonType === "available" ? "bg-[#DFFF00]" : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
+              className={`rounded-md border-r-0 ${buttonType === "available" ? "bg-[#DFFF00]" : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
             >
               Available
             </button>
             <button
               onClick={() => handleButtonType("selected")}
-              className={`rounded-md border-l-none ${buttonType === "selected" ? "bg-[#DFFF00] " : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
+              className={`rounded-md border-l-0 ${buttonType === "selected" ? "bg-[#DFFF00] " : ""} text-[#111111] px-6 py-3 text-xs font-extrabold  `}
             >
-              Selected
+              Selected{" "}
+              <span className="text-red-500"> {selectedPlayers.length}</span>
             </button>
           </div>
         </div>
@@ -59,6 +70,7 @@ const Players = ({ playersPromise, coin, setCoin }: PlayersProps) => {
             setSelectedPlayers={setSelectedPlayers}
             coin={coin}
             setCoin={setCoin}
+            handleAddMorePlayer={handleAddMorePlayer}
           />
         )}
       </div>
