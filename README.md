@@ -276,56 +276,15 @@ Examples:
 ⚠️ You can select only 6 players.
 ```
 
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-repository-name.git
-```
-
-Go to the project directory:
-
-```bash
-cd your-repository-name
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-The application will then be available at the local development URL shown by Vite.
-
-## 📦 Build for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
 ## 🧑‍💻 Author
 
 **Mostafizur Rahman**
 
 Frontend Developer | React | TypeScript | Tailwind CSS
 
-- GitHub: [Your GitHub Profile](https://github.com/)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/)
+- GitHub: [Your GitHub Profile](https://github.com/mostafizur131)
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/mostafizur131/)
+- Site: [Your Website Profile](https://mostafizurrahman.netlify.app/)
 
 ## 📄 License
 
