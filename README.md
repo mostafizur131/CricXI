@@ -6,12 +6,12 @@ The project focuses on practicing React state management, component-based archit
 
 ## 🚀 Live Demo
 
-🔗 **Live Website:** [Add your live deployment URL here]
+🔗 **Live Website:** https://rahman-cricxi.netlify.app/
 
 ## 📸 Preview
 
 ```md
-(./src/assets/preview.png)
+./src/assets/preview.png
 ```
 
 ## ✨ Features
