@@ -1,15 +1,21 @@
-import { use, useState } from "react";
+import { use, useState, type Dispatch, type SetStateAction } from "react";
 import type { IPlayer } from "../../types";
 import AvailablePlayers from "./AvailablePlayers";
 import SelectedPlayers from "./SelectedPlayers";
 
 interface PlayersProps {
   playersPromise: Promise<IPlayer[]>;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
 }
 
-const Players = ({ playersPromise }: PlayersProps) => {
+const Players = ({ playersPromise, coin, setCoin }: PlayersProps) => {
   const players = use(playersPromise);
-  const [buttonType, setButtonType] = useState("available");
+  const [buttonType, setButtonType] = useState<"available" | "selected">(
+    "available",
+  );
+
+  const [selectedPlayers, setSelectedPlayers] = useState<IPlayer[]>([]);
 
   const handleButtonType = (type: "available" | "selected") => {
     setButtonType(type);
@@ -22,7 +28,7 @@ const Players = ({ playersPromise }: PlayersProps) => {
           <h3 className="text-2xl font-bold text-gray-900">
             {buttonType === "available"
               ? "Available Players"
-              : "Selected Players"}
+              : `Selected Players (${selectedPlayers.length}/6)`}
           </h3>
           <div className="flex w-fit overflow-hidden rounded-full border border-gray-200 bg-white text-xs font-medium">
             <button
@@ -40,9 +46,20 @@ const Players = ({ playersPromise }: PlayersProps) => {
           </div>
         </div>
         {buttonType === "available" ? (
-          <AvailablePlayers players={players} />
+          <AvailablePlayers
+            players={players}
+            coin={coin}
+            setCoin={setCoin}
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
+          />
         ) : (
-          <SelectedPlayers />
+          <SelectedPlayers
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
+            coin={coin}
+            setCoin={setCoin}
+          />
         )}
       </div>
     </div>

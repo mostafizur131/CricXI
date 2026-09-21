@@ -2,13 +2,13 @@ import { useState } from "react";
 import { Menu, X, Coins } from "lucide-react";
 import logo from "../assets/logo.png";
 
-const NavBar = () => {
+const NavBar = ({ coin }: { coin: number }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = ["Home", "Fixture", "Teams", "Schedules"];
 
   return (
-    <header className="bg-white relative border-b border-gray-100 sticky top-0 z-50 ">
+    <header className="bg-white border-b border-gray-100 sticky top-0 z-50 ">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between md:h-20">
           {/* ========================================
@@ -66,11 +66,10 @@ const NavBar = () => {
           ======================================== */}
           <button
             type="button"
-            className="flex items-center gap-1.5 rounded-full border border-gray-100 bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 shadow-sm transition hover:border-gray-200 hover:shadow"
+            className="min-w-20 flex items-center gap-1.5 rounded-full border border-gray-100 bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 shadow-sm transition hover:border-gray-200 hover:shadow"
           >
-            <span>0 Coin</span>
-
             <Coins className="h-4 w-4 text-yellow-500" />
+            <span>{coin}</span>
           </button>
         </div>
 

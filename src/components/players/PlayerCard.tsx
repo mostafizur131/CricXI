@@ -8,15 +8,48 @@ import {
 } from "lucide-react";
 
 import type { IPlayer } from "../../types";
+import { useState, type Dispatch, type SetStateAction } from "react";
+import { toast } from "react-toastify";
 
 interface PlayerCardProps {
   player: IPlayer;
+  coin: number;
+  setCoin: Dispatch<SetStateAction<number>>;
+  selectedPlayers: IPlayer[];
+  setSelectedPlayers: Dispatch<SetStateAction<IPlayer[]>>;
 }
 
-const PlayerCard = ({ player }: PlayerCardProps) => {
+const PlayerCard = ({
+  player,
+  coin,
+  setCoin,
+  selectedPlayers,
+  setSelectedPlayers,
+}: PlayerCardProps) => {
+  const [isSelected, setIsSelected] = useState(false);
+
+  const handleSelectedPlayer = () => {
+    setIsSelected(true);
+    const newPriceCoin = coin - player.price;
+
+    if (selectedPlayers.length > 6) {
+      toast.warn(
+        "You Can Purchage only 6 Players. You already purchage 6 players",
+      );
+    } else if (newPriceCoin >= 0) {
+      setCoin(newPriceCoin);
+      toast.success(`${player.name} is purchage successful.`);
+    } else {
+      toast.warn("Balance is insufficiant");
+    }
+
+    // Selected Players Logic
+    setSelectedPlayers([...selectedPlayers, player]);
+  };
+
   return (
     <div>
-      <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+      <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg">
         {/* Player Image */}
         <div className="relative h-56 overflow-hidden">
           <img
@@ -90,10 +123,15 @@ const PlayerCard = ({ player }: PlayerCardProps) => {
             {/* Choose Player */}
             <button
               type="button"
-              // onClick={() => onChoosePlayer(player)}
-              className="rounded-xl border border-slate-300 px-3 py-2 text-sm font-bold text-slate-700 transition-all duration-200 hover:border-slate-900 hover:bg-slate-900 hover:text-white"
+              onClick={() => handleSelectedPlayer()}
+              disabled={isSelected || selectedPlayers.length > 6}
+              className={`rounded-xl border  px-3 py-2 text-sm font-bold ${isSelected === true ? "border-emerald-500 bg-emerald-100 text-emerald-500" : "border-slate-900 bg-slate-900 text-white"} ${selectedPlayers.length > 6 ? "border-slate-300 bg-slate-100 text-slate-500" : ""}`}
             >
-              Choose Player
+              {isSelected
+                ? "Selected"
+                : selectedPlayers.length >= 6
+                  ? "Out of Range"
+                  : "Choose Player"}
             </button>
           </div>
         </div>
