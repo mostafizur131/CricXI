@@ -1,6 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { IPlayer } from "../../types";
 import { Trash2 } from "lucide-react";
+import { toast } from "react-toastify";
 
 export interface SelectedPlayersCardProps {
   selectedPlayers: IPlayer[];
@@ -25,13 +26,14 @@ export default function SelectedPlayersCard({
     // Update Coin
     const updateCoinPrice = coin + player.price;
     setCoin(updateCoinPrice);
+    toast.info(`${player.name} is removed from selections!`);
   };
   return (
-    <div>
+    <>
       {selectedPlayers.map((player) => (
         <div
           key={player.id}
-          className="flex min-h-15.5 items-center justify-between rounded-xl border border-gray-200 bg-white px-3 py-2.5 transition-shadow hover:shadow-sm sm:px-4"
+          className="flex min-h-15.5 items-center justify-between rounded-xl border border-gray-200 bg-white px-3 py-2.5 transition-shadow hover:shadow-sm sm:px-4 mb-2"
         >
           {/* Player Info */}
           <div className="flex min-w-0 items-center gap-3">
@@ -67,6 +69,6 @@ export default function SelectedPlayersCard({
           </button>
         </div>
       ))}
-    </div>
+    </>
   );
 }

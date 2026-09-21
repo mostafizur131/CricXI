@@ -31,7 +31,7 @@ const SelectedPlayers = ({
           </p>
         </div>
       ) : (
-        <div className="space-y-4">
+        <div>
           <SelectedPlayersCard
             coin={coin}
             setCoin={setCoin}
